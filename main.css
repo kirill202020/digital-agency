@@ -62,8 +62,8 @@ body{
     font-size: 14px;
     line-height: 21px;
     line-height: 148%;
-    Align: Left;
-    vertical-align: Top;
+    align: Left;
+    Vertical-align: top;
     letter-spacing: 2%;
     Fill: Solid;
     color: #57B3FE;
@@ -324,4 +324,100 @@ body{
     position: absolute;
     top: 112px;
     left: 190px;
+}
+
+
+.brand{
+    margin-top: 100px;
+    padding: 40px 100px;
+}
+
+
+.brand__table{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    'b b b b b'
+    'c d e f g'
+    'h i j k l'
+    '. n n n .';
+    place-items: center center;
+}
+
+
+.item-1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 122%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #00A077;
+    opacity: 0.5;
+    font-size: 8px;
+}
+
+.item-2{
+    grid-area: b;
+    text-align: center;
+}
+.item-3{
+    grid-area: c;
+}
+.item-4{
+    grid-area: d;
+}
+.item-5{
+    grid-area: e;
+}
+.item-6{
+    grid-area: f;
+}
+.item-7{
+    grid-area: g;
+}
+.item-8{
+    grid-area: h;
+}
+.item-9{
+    grid-area: i;
+}
+.item-10{
+    grid-area: j;
+}
+.item-11{
+    grid-area: k;
+}
+.item-12{
+    grid-area: l;
+}
+.item-13{
+    grid-area: n;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148%;
+    text-align: center;
+    color: #424A4D;
+    font-size: 10px;
+}
+
+.semi-footer{
+    height: 820px;
+    margin-top: 100px;
+    background: url(img/card3.png) top 150px right 180px / 275px 305px no-repeat, 
+                url(img/research.png) top 318px right 205px / 410px 310px no-repeat, 
+                url(img/time2.png) top 180px right 300px / 435px 227px no-repeat,
+                url(img/bgglass.png) top 151px right 163px / 500px 400px no-repeat,
+                linear-gradient(249.78deg, #35D3FF -0.64%, #A963FB 103.6%); 
+}
+
+
+.footer{
+    height: 200px;  
+    background: #000;
 }
