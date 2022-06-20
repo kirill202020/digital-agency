@@ -162,6 +162,7 @@ body{
 
 .features{
     background: #f9f8ff;
+    padding-bottom: 180px;
 }
 
 
@@ -257,6 +258,51 @@ body{
     margin-bottom: 32px;
 }
 
+.work__text__zone{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+    flex-direction: column;
+    max-width: 530px;
+}
+
+
+.work__icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 13px;
+    background: #DAE6FF;
+    box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
+    border-radius: 15px;
+}
+
+
+.work__icon--folder{
+    background: #E9E6FF;
+}
+
+.work__icon--document{
+    background: #CEEDFF;
+}
+
+
+.work__text__zone h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #3B3E43;
+
+}
+
+.work__text__zone p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595E64;
+}
+
 
 .works__zone{
     display: flex;
@@ -268,20 +314,24 @@ body{
 
 
 .works__box{
-    width: 100%;
+    width: 1170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: #FFFFFF;
     box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
     border-radius: 15px;
     position: relative;
-
+    flex: auto;
+    padding-bottom: 20px;
+    padding-right: 15px;
 }
 
 
 .work__box__img{
     position: relative;
+    flex-basis: 50%;
+    height: 323px;
 }
 
 .work__img--1{
@@ -297,7 +347,7 @@ body{
 }
 .work__img--3{
     position: absolute;
-    top: 120px;
+    bottom: -12px;   
     left: 270px;
 }
 .work__img--4{
@@ -327,6 +377,17 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 .brand{
     margin-top: 100px;
     padding: 40px 100px;
@@ -338,7 +399,6 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-    'b b b b b'
     'c d e f g'
     'h i j k l'
     '. n n n .';
@@ -346,7 +406,11 @@ body{
 }
 
 
-.item-1{
+.texts{
+    text-align: center;
+}
+
+.brand__subtitle{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -360,9 +424,12 @@ body{
     font-size: 8px;
 }
 
-.item-2{
-    grid-area: b;
+.brand__h2{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 122%;
     text-align: center;
+    color: #3B3E43;
 }
 .item-3{
     grid-area: c;
@@ -416,8 +483,105 @@ body{
                 linear-gradient(249.78deg, #35D3FF -0.64%, #A963FB 103.6%); 
 }
 
+.semi-footer .container{
+    display: flex;
+    padding: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.footer{
-    height: 200px;  
+.start__text__area{
+    max-width: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.start__label{
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 122%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 24px;
+}
+
+.start__text__area h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 122%;
+    color: #FFFFFF;
+}
+
+
+.start__text__area p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 30px;    
+}
+
+
+
+.footer{  
     background: #000;
+    padding: 84px 0 35px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 27px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+
+.footer__logo img{
+    width: 70px;
+}
+
+.footer__logo{
+    opacity: 0.8;
+}
+
+.footer .nav-link{
+    opacity: 0.8;
+}
+
+.footer__social{
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer__links a{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+
+}
+
+.footer__copy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.footer__links{
+    display: flex;
+    gap: 24px;
 }
